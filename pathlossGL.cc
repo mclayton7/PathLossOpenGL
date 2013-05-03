@@ -301,6 +301,7 @@ void keyfunc(unsigned char k, int x, int y)
     }
 }
 
+// Set pixel function used to interact with pixelMap
 void setpixel(char *data, int x, int y, int r, int g, int b)
 {
     data[(y * WSIZE + x) * 3 + 0] = r;
@@ -308,6 +309,7 @@ void setpixel(char *data, int x, int y, int r, int g, int b)
     data[(y * WSIZE + x) * 3 + 2] = b;
 }
 
+// Draw Callback function used in glutDisplayFunc
 void drawfunc(void)
 {
     glDrawPixels(WSIZE, WSIZE, GL_RGB, GL_UNSIGNED_BYTE, easel);
