@@ -1,6 +1,6 @@
 CXX=g++
-CXXFLAGS = 
-LD_FLAGS=-framework OpenGL -framework GLUT
+CXXFLAGS = -Wno-deprecated
+LD_FLAGS= -framework OpenGL -framework GLUT 
 
 
 pathlossGL:	pathlossGL.o
